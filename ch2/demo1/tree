@@ -1,0 +1,12 @@
+.
+├── html
+│   ├── server1
+│   │   └── index.html
+│   ├── server2
+│   │   └── index.html
+│   └── server3
+│       └── index.html
+├── main.tf
+└── tree
+
+4 directories, 5 files
