@@ -1,0 +1,12 @@
+#cloud-config
+hostname: rocky9
+users:
+  - name: rocky
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: wheel
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzYNKATqdfymue62KF5NH2L2BE33YCwozjGjS52GKckCShGtQoGaPDpiQW6UVTbS4lj1FErDjOYC2Wg2ngw9CPC/bTIglCOisL0Kxhy5fvd/haEnIjOf7KpxaohAOSCEngisBHxDRgAzTWLu0g3zDicdWMEThwnrQmfL3Fv69bBa5gZHfyjE77Uu9oak7jdjTbh3d3V1mhMrnA/FNHMguYiwdvILklYhSh1Idgu5jHpPL08J+DHDnztstS/QD2mWC6mmtEIiuFAaWB4i6k0/Cd/58U/OCKjsmOtQAv7uOYaagpqkg5tK6YlPyK/cQvdyBgD+bde0NA1H82a1s1ekhHJYbjzqW7InNxehKriQqtdqD2KZJ8ATlSj6HSY2Z7RI1uAi6orJDgSr90PCR1TL2TpdPyFcoq2W8tQ2JiKOqSgYA4X/QfCfHRhz/r/TapSdQwCr7AmTZdj9HmTqKqqN88B1NLjVZDs9k/anS0/U03GgO40tZoAaS2aPwpTht7/Ms= ahmed@ahmed-MSI
+ssh_pwauth: false
+disable_root: true
+
